@@ -35,6 +35,7 @@ class VNExpressCollectLink(scrapy.Spider):
 
             index += 1
 
+        file = open('/home/nhatnor123/Desktop/test.txt', 'a')
 
         for key, text in article.iteritems():
 
@@ -43,3 +44,8 @@ class VNExpressCollectLink(scrapy.Spider):
             else:
                 print("{key} : {text}".format(key=key.upper(), text=text))
 
+            #write data to the extenal file txt
+            #file.write("\n")
+            file.write(text)
+
+        file.close()
