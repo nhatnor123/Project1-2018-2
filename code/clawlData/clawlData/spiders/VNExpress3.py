@@ -24,7 +24,7 @@ class ClawlVNExpress(scrapy.Spider):
 
         # handle content with a set of <p> tag
         index = 1
-        for content in response.xpath('//*[@class="sidebar_1"]'):
+        for content in response.xpath('//*[@id="col_sticky"]/article'):
             artilce[index] = content.extract().encode('utf-8').strip()
             #artilce[index] = re.sub(re.compile('<.*?>'), "", artilce[index])
             artilce[index] = re.compile(r'<[^>]+>').sub('', artilce[index])

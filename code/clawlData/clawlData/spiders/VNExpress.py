@@ -16,10 +16,8 @@ class ClawlVNExpress(scrapy.Spider):
 
     def parse_artilce(self, response):
         artilce = {}
-        artilce['TITLE'] = response.xpath('/html/body/section[2]/section[1]/section[1]/h1/text()').extract()[0].encode(
-            'utf-8').strip()
-        artilce['DESCRIPTION'] = response.xpath('/html/body/section[2]/section[1]/section[1]/p[1]/text()').extract()[
-            0].encode('utf-8').strip()
+        artilce['TITLE'] = response.xpath('/html/body/section[2]/section[1]/section[1]/h1/text()').extract()[0].encode('utf-8').strip()
+        artilce['DESCRIPTION'] = response.xpath('/html/body/section[2]/section[1]/section[1]/p[1]/text()').extract()[0].encode('utf-8').strip()
 
 
         # handle content with a set of <p> tag
