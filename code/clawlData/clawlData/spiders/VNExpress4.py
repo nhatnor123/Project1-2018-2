@@ -3,19 +3,20 @@ import re
 
 class VNExpressCollectLink(scrapy.Spider):
     name = "VNExpressFinal"
+
     def start_requests(self):
 
+        urlBase = 'https://vnexpress.net/thoi-su-p1'
 
-        urls = ['https://vnexpress.net/thoi-su']
-
-        for url in urls:
-            yield scrapy.Request(url= url, callback = self.getLink)
-
+        totalPage = 3
+        for page in range(totalPage):
+            url =urlBase.replace(str(1), str(page+1))       #the reason why must use  (page + 1) is range(x) from 0 to (x-1)
+            yield scrapy.Request(url=url, callback=self.getLink)
 
 
 
     def getLink(self, response):
-        for newLink in response.xpath('//*[@class="title_news" and not(i)]/a[1]/@href'):
+        for newLink in response.xpath('//*[@class="sidebar_1"]//*[@class="title_news" and not(i)]/a[1]/@href'):
             yield scrapy.Request(url= newLink.extract().encode('utf-8').strip(), callback= self.parse_article )
             #print(newLink.extract().encode('utf-8').strip())
 
@@ -36,9 +37,9 @@ class VNExpressCollectLink(scrapy.Spider):
 
 
         for key, text in article.iteritems():
-            print("\n")
+
             if type(key) is int:
                 print("{key} : {text}".format(key=key, text=text))
             else:
                 print("{key} : {text}".format(key=key.upper(), text=text))
-            print("")
+
