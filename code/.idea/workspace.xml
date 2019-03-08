@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2782552-a03c-486a-a739-205c51a0e677" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress.py" beforeDir="false" afterPath="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress3.py" beforeDir="false" afterPath="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+            <state relative-caret-position="266">
+              <caret line="19" column="92" selection-start-line="19" selection-start-column="92" selection-end-line="19" selection-end-column="92" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -41,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -60,9 +58,9 @@
       <list>
         <option value="$PROJECT_DIR$/scrapy/test.py" />
         <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/soHoa.py" />
-        <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress3.py" />
         <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress2.py" />
         <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress.py" />
+        <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress3.py" />
       </list>
     </option>
   </component>
@@ -169,12 +167,12 @@
       <updated>1551971554552</updated>
       <workItem from="1551971558811" duration="6945000" />
       <workItem from="1552009622372" duration="6015000" />
-      <workItem from="1552017125402" duration="449000" />
+      <workItem from="1552017125402" duration="524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13409000" />
+    <option name="totallyTimeSpent" value="13484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -220,6 +218,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -232,18 +237,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        <state relative-caret-position="266">
+          <caret line="19" column="92" selection-start-line="19" selection-start-column="92" selection-end-line="19" selection-end-column="92" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
