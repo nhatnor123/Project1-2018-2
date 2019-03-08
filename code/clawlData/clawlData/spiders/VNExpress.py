@@ -37,8 +37,6 @@ class ClawlVNExpress(scrapy.Spider):
             else:
                 print("{key} : {text}".format(key=key.upper(), text=text))
             print("")
-            print(type(key))
-            print(type(text))
 
 
         #print(json.dumps(artilce, indent=4, sort_keys=True))
