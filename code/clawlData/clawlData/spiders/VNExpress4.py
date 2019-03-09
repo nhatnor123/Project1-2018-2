@@ -36,6 +36,8 @@ class VNExpressCollectLink(scrapy.Spider):
 
             index += 1
 
+
+        #directory of file txt which be writen crawl data
         file = open('/home/nhatnor123/Desktop/test.txt', 'a')
 
         for key, text in article.iteritems():
