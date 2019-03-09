@@ -1,5 +1,6 @@
 from pyvi import ViTokenizer
 import gensim
+import operator
 
 file = open('/home/nhatnor123/Desktop/test.txt', 'r')
 
@@ -12,8 +13,13 @@ for line in file:
         else:
             dict[word] += 1
 
-for key in dict:
-    print(key+" : "+ str(dict[key]))
+#for key in dict:
+    #print(key+" : "+ str(dict[key]))
+
+for line in sorted(dict.items(), key= operator.itemgetter(1)) :
+    print(line)
+
+
 
 file.close()
 

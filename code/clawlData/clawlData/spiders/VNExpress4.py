@@ -8,7 +8,7 @@ class VNExpressCollectLink(scrapy.Spider):
 
         urlBase = 'https://vnexpress.net/thoi-su-p1'
 
-        totalPage = 3
+        totalPage = 50
         for page in range(totalPage):
             url =urlBase.replace(str(1), str(page+1))       #the reason why must use  (page + 1) is range(x) from 0 to (x-1)
             yield scrapy.Request(url=url, callback=self.getLink)
