@@ -1,4 +1,5 @@
 from pyvi import ViTokenizer
+
 # import gensim
 # import operator
 #
@@ -23,4 +24,5 @@ from pyvi import ViTokenizer
 #
 # file.close()
 
-print(ViTokenizer.tokenize("tinh ,thông khả thi Hôm nay tôi muốn đi chơi với kfjslkjf lksjdfl ji  công ty tnhh mtv Nguyễn lưu nhật mọi người trong lớp học của tôi    , ..... /^ &^ vui      vẻ lấp       lánh"))
+#print(ViTokenizer.tokenize("tinh ,thông nhatnor123@gmail.com khả thi Hôm nay tôi muốn đi chơi với kfjslkjf lksjdfl ji  công ty tnhh mtv Nguyễn lưu nhật mọi người trong lớp học của tôi    , ..... /^ &^ vui      vẻ lấp       lánh"))
+

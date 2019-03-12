@@ -42,34 +42,43 @@ def ListWord(text):
 
 
 
-def TokenizeText(listWordExample, start, end):
+def TokenizeText(listWordExample, start, end, result):
     for i in range(end, start - 1, -1):
         if i==start:
-            print(listWordExample[i].lower())
-            TokenizeText(listWordExample, start+1, end)
+            print(listWordExample[i],end= " ")
+            result = result + listWordExample[i]+" "
+            TokenizeText(listWordExample, start+1, end, result)
+            return
         else :
             tempString = ""
             for j in range(start, i + 1, 1):
                  if j != i:
-                     tempString += listWordExample[j].lower() + "_"
+                     tempString += listWordExample[j] + "_"
             else:
-                 tempString += listWordExample[j].lower()
+                 tempString += listWordExample[j]
 
             #print(tempString)
-            if tempString in dictionary:
-                print(tempString)
-                TokenizeText(listWordExample, i + 1, end)
-                break
+            if tempString.lower() in dictionary:
+                print(tempString, end= " ")
+                result = result + tempString+" "
+                TokenizeText(listWordExample, i + 1, end, result)
+                return
 
     return None
 
 
 
+def tokenize(data):
+    list = ListWord(data)
+    result = ""
+    TokenizeText(list, 0, len(list)-1, result)
+    return result
 
-file = open('/home/nhatnor123/Desktop/test.txt', 'r')
+
+
+
+
 fileDictionary = open('/home/nhatnor123/Desktop/Dict-UTF8.txt', 'r')
-
-
 dictionary = []
 
 for line in fileDictionary:
@@ -83,20 +92,21 @@ for line in fileDictionary:
         line = line.split(" \n")[0]
         dictionary.append(line)
 
+fileDictionary.close()
 
 
-example = "tinh thông khả thi Hôm nay tôi muốn đi chơi với mọi người trong lớp học của tôi vui vẻ lấp lánh"
-example2 = "tinh ,thông khả fskdjfklj vãi cả lồn địt mẹ hay :))) Hôm nay tôi muốn đi chơi với   công ty tnhh mtv Nguyễn lưu nhật mọi người trong lớp học của tôi đây là đài tiếng nói Việt NaMM   , ....."
 
 
-print(dictionary)
+
+example1 = "tinh thông khả thi Hôm nay tôi  "
+example2 = "tinh ,thông khả fskdjfklj vãi cả  hay :))) Hôm nay tôi muốn đi chơi với  nhatnor123@gmail.com  công ty tnhh mtv Nguyễn lưu nhật mọi người trong lớp học của tôi đây là đài tiếng nói Việt NaMM   , ....."
+example3 = " 'đừng vễ trễ ' 13h ngày 24/2, tổ tuần tra trên cao tốc Nội Bài - Lào Cai phát hiện một xe Innova 7 chỗ dừng tại làn khẩn cấp tại km 236+250 thuộc xã Gia Phú, Bảo Thắng, tỉnh Lào Cai. Đằng sau xe, 6 người đang trải chiếu ngồi ăn uống."
+example4 = "'phó văn phòng', 'phó tiến sĩ' nhatnor123@gmail.com , 'dài đuồn đuỗn', 'lãnh sự quán', 'kí túc xá', 'keo tai tượng', 'bom từ trường', 'cực chẳng đã', 'giày bát kết', 'ngắn tun hủn', 'quốc tế ca', 'hoa mép dê', 'tẻo tèo teo', 'óc bã đậu"
 
 print(ListWord(example2))
 
-TokenizeText (ListWord(example2), 0, len(ListWord(example2)) - 1 )
+TokenizeText (ListWord(example3), 0, len(ListWord(example3)) - 1, "" )
 
-print(len(ListWord(example)))
-print(len(ListWord(example2)))
 
-fileDictionary.close()
-file.close()
+
+print(tokenize(example1))
