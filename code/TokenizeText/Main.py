@@ -3,12 +3,14 @@ import tokenizeText as tk
 import gensim
 import operator
 
+
+
 file = open('/home/nhatnor123/Desktop/test.txt', 'r')
 
 dict = {}
 
 for line in file:
-    for word in gensim.utils.simple_preprocess(tk.Tokenize(line.lower())):
+    for word in gensim.utils.simple_preprocess(tk.tokenize(line.lower())):
         if word not in dict:
             dict[word] = 1
         else:

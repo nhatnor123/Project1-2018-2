@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2782552-a03c-486a-a739-205c51a0e677" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TokenizeText/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TokenizeText/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TokenizeText/TokenizeText.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/TokenizeText.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TokenizeText/tokenizeText.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/tokenizeText.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,30 +16,60 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$testMathplotlib.coverage" NAME="testMathplotlib Coverage Results" MODIFIED="1552120144863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TokenizeText" />
-    <SUITE FILE_PATH="coverage/code$tokenizeText.coverage" NAME="tokenizeText Coverage Results" MODIFIED="1552447850864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TokenizeText" />
+    <SUITE FILE_PATH="coverage/code$tokenizeText.coverage" NAME="tokenizeText Coverage Results" MODIFIED="1552504563157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TokenizeText" />
     <SUITE FILE_PATH="coverage/code$test.coverage" NAME="test Coverage Results" MODIFIED="1551971757849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/code$test33.coverage" NAME="test33 Coverage Results" MODIFIED="1552122789066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TokenizeText" />
-    <SUITE FILE_PATH="coverage/code$Test.coverage" NAME="Test Coverage Results" MODIFIED="1552406045851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TokenizeText" />
+    <SUITE FILE_PATH="coverage/code$Test.coverage" NAME="Test Coverage Results" MODIFIED="1552499327395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TokenizeText" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TokenizeText/Test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="367">
+              <caret line="28" column="143" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
+        <entry file="file://$PROJECT_DIR$/TokenizeText/tokenizeText.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="327">
+              <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
             </state>
           </provider>
         </entry>
@@ -45,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TokenizeText/TokenizeText.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2496">
-              <caret line="104" column="72" selection-start-line="104" selection-start-column="72" selection-end-line="104" selection-end-column="72" />
+            <state relative-caret-position="-1906">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -80,10 +112,11 @@
         <option value="$PROJECT_DIR$/TokenizeText/test33.py" />
         <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress4.py" />
         <option value="$PROJECT_DIR$/TokenizeText/test2.py" />
-        <option value="$PROJECT_DIR$/TokenizeText/tokenizeText.py" />
-        <option value="$PROJECT_DIR$/TokenizeText/Test.py" />
-        <option value="$PROJECT_DIR$/TokenizeText/Main.py" />
+        <option value="$PROJECT_DIR$/tk/TokenizeText.py" />
         <option value="$PROJECT_DIR$/TokenizeText/TokenizeText.py" />
+        <option value="$PROJECT_DIR$/TokenizeText/Main.py" />
+        <option value="$PROJECT_DIR$/TokenizeText/Test.py" />
+        <option value="$PROJECT_DIR$/TokenizeText/tokenizeText.py" />
       </list>
     </option>
   </component>
@@ -93,7 +126,9 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -136,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TokenizeText">
+  <component name="RunManager" selected="Python.tokenizeText">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,10 +300,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TokenizeText" />
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.tokenizeText" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.TokenizeText" />
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
@@ -295,33 +330,34 @@
       <workItem from="1552362645316" duration="16359000" />
       <workItem from="1552392764270" duration="599000" />
       <workItem from="1552405156263" duration="5671000" />
-      <workItem from="1552447095395" duration="2101000" />
+      <workItem from="1552447095395" duration="2780000" />
+      <workItem from="1552477355681" duration="12881000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69329000" />
+    <option name="totallyTimeSpent" value="82889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895397" visible="true" weight="0.17302378" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895397" visible="true" weight="0.17468214" />
       <window_info id="Structure" order="1" sideWeight="0.501046" side_tool="true" weight="0.17302378" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3368201" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4508368" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28556484" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.2583682" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.39225942" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.39330545" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -334,6 +370,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="result" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>result</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scrapy/test.py" />
@@ -428,40 +480,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TokenizeText/test2.py" />
-    <entry file="file://$PROJECT_DIR$/TokenizeText/tokenizeText.py">
+    <entry file="file://$PROJECT_DIR$/tk/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/tk/TokenizeText.py" />
+    <entry file="file://$PROJECT_DIR$/TokenizeText/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="367">
+          <caret line="28" column="143" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="143" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TokenizeText/Test.py">
+    <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="22">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TokenizeText/TokenizeText.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2496">
-          <caret line="104" column="72" selection-start-line="104" selection-start-column="72" selection-end-line="104" selection-end-column="72" />
+        <state relative-caret-position="-1906">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TokenizeText/tokenizeText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

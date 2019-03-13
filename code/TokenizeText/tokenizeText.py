@@ -2,17 +2,16 @@ import re
 import unicodedata
 import sys
 
-
-#get dictionary from extenal file
+# get dictionary from extenal file
 fileDictionary = open('/home/nhatnor123/Desktop/Dict-UTF8.txt', 'r')
 dictionary = []
 
 for line in fileDictionary:
-    if line == "### Number of part-of-speech tag: 17 ###\n" :
+    if line == "### Number of part-of-speech tag: 17 ###\n":
         break;
-    elif line == "### Number of words: 31137 ###\n" :
+    elif line == "### Number of words: 31137 ###\n":
         continue
-    else :
+    else:
         regex = "{.*?}"
         line = re.sub(re.compile(regex), "", line)
         line = line.split(" \n")[0]
@@ -21,8 +20,7 @@ for line in fileDictionary:
 fileDictionary.close()
 
 
-
-#select all word and non-word
+# select all word and non-word
 def ListWord(text):
     text = unicodedata.normalize('NFC', text)
 
@@ -54,54 +52,105 @@ def ListWord(text):
     if sys.version_info < (3, 0):
         patterns = patterns.decode('utf-8')
     tokens = re.findall(patterns, text, re.UNICODE)
+
     listWord = []
     for set in tokens:
         listWord.append(set[0])
     return listWord
 
 
-
-#tokenize text from a ListWord
+# tokenize text from a ListWord
 result = ""
+
 
 def TokenizeText(listWordExample, start, end):
     global result
     for i in range(end, start - 1, -1):
-        if i==start:
-            #print(listWordExample[i],end= " ")
-            result = result + listWordExample[i]+" "
-            TokenizeText(listWordExample, start+1, end)
+        if i == start:
+            # print(listWordExample[i],end= " ")
+            result = result + listWordExample[i] + " "
+            TokenizeText(listWordExample, start + 1, end)
             return
-        else :
+        else:
             tempString = ""
             for j in range(start, i + 1, 1):
-                 if j != i:
-                     tempString += listWordExample[j] + "_"
+                if j != i:
+                    tempString += listWordExample[j] + "_"
             else:
-                 tempString += listWordExample[j]
+                tempString += listWordExample[j]
 
-            #print(tempString)
+            # print(tempString)
             if tempString.lower() in dictionary:
-                #print(tempString, end= " ")
-                result = result + tempString+" "
+                # print(tempString, end= " ")
+                result = result + tempString + " "
                 TokenizeText(listWordExample, i + 1, end)
                 return
 
     return None
 
 
+def TokenizeTextKhuDeQuy(listWord):
+    for i in range(len(listWord)):
+        pass
 
-#tokenize text from data type string
+
+# tokenize text from data type string
 def tokenize(data):
     global result
     list = ListWord(data)
     result = ""
-    TokenizeText(list, 0, len(list)-1)
+
+    symbolEndSentence = ["`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "{", "}", "[",
+                         "]", "|", "\\", ":", ";", "'", '"', "<", ",", ".", "<", ">", "?", "/"]
+    listDiemNgatCau = []
+
+    for i in range(len(list)):
+        if list[i] in symbolEndSentence:
+            listDiemNgatCau.append(i)
+
+    if len(listDiemNgatCau) == 0:
+        TokenizeText(list, 0, len(list) - 1)
+    else:
+        TokenizeText(list, 0, listDiemNgatCau[0] - 1)
+
+        for i in range(0, len(listDiemNgatCau), 1):
+            if i == len(listDiemNgatCau) - 1:
+                result = result + list[listDiemNgatCau[i]] + " "
+            else:
+                result = result + list[listDiemNgatCau[i]] + " "
+                TokenizeText(list, listDiemNgatCau[i] + 1, listDiemNgatCau[i + 1] - 1)
+        TokenizeText(list, listDiemNgatCau[len(listDiemNgatCau) - 1] + 1, len(list) - 1)
+
     return result
 
 
 
+#main
+import gensim
+import operator
 
+file = open('/home/nhatnor123/Desktop/test.txt', 'r')
+dict = {}  # type dictionary
 
+count = 0
+for line in file:
 
+    # for word in gensim.utils.simple_preprocess(tokenize(line.lower())):
+    #     if word not in dict:
+    #         dict[word] = 1
+    #     else:
+    #         dict[word] += 1
+
+    print(tokenize(line))
+    # count += 1
+    # if count == 10:
+    #     break
+
+# for key in dict:
+# print(key+" : "+ str(dict[key]))
+
+# for line in sorted(dict.items(), key=operator.itemgetter(1)):
+#     print(line)
+
+file.close()
 
