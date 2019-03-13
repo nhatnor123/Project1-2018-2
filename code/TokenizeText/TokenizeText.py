@@ -92,7 +92,7 @@ def TokenizeText(listWordExample, start, end):
 
 
 #tokenize text from data type string
-def tokenize(data):
+def Tokenize(data):
     global result
     list = ListWord(data)
     result = ""
@@ -102,6 +102,7 @@ def tokenize(data):
 
 
 
-
+xau = "heello chúng m lấp lánh sao đỏ cờ vàng áo vàng quần áo bộ trưởng"
+print(Tokenize(xau))
 
 
