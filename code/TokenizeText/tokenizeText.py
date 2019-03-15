@@ -122,36 +122,3 @@ def tokenize(data):
         TokenizeText(list, listDiemNgatCau[len(listDiemNgatCau) - 1] + 1, len(list) - 1)
 
     return result
-
-
-
-#main
-# import gensim
-# import operator
-#
-# file = open('/home/nhatnor123/Desktop/test.txt', 'r')
-# dict = {}  # type dictionary
-#
-# count = 0
-# for line in file:
-
-    # for word in gensim.utils.simple_preprocess(tokenize(line.lower())):
-    #     if word not in dict:
-    #         dict[word] = 1
-    #     else:
-    #         dict[word] += 1
-
-    #print(tokenize(line))
-    # count += 1
-    # if count == 10:
-    #     break
-
-# for key in dict:
-# print(key+" : "+ str(dict[key]))
-
-# for line in sorted(dict.items(), key=operator.itemgetter(1)):
-#     print(line)
-
-#file.close()
-
-print(tokenize("môn học xử lý ngôn ngữ tự nhiên"))
