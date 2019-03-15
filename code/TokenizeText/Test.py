@@ -27,3 +27,4 @@ from pyvi import ViTokenizer
 print(ViTokenizer.tokenize("tinh ,thông nhatnor123@gmail.com khả thi Hôm nay tôi muốn đi chơi với kfjslkjf lksjdfl ji  công ty tnhh mtv Nguyễn lưu nhật mọi người trong lớp học của tôi    , ..... /^ &^ vui      vẻ lấp       lánh"))
 
 print(ViTokenizer.tokenize("nhatnor123@gmail.com là địa chỉ mail của tôi. tôi là Nguyễn Lưu Nhật, đại học bách khoa, http://www.facebook.com.vn"))
+print(ViTokenizer.tokenize("Học sinh học sinh vật học "))

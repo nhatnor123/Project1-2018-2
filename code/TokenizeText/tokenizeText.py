@@ -126,14 +126,14 @@ def tokenize(data):
 
 
 #main
-import gensim
-import operator
-
-file = open('/home/nhatnor123/Desktop/test.txt', 'r')
-dict = {}  # type dictionary
-
-count = 0
-for line in file:
+# import gensim
+# import operator
+#
+# file = open('/home/nhatnor123/Desktop/test.txt', 'r')
+# dict = {}  # type dictionary
+#
+# count = 0
+# for line in file:
 
     # for word in gensim.utils.simple_preprocess(tokenize(line.lower())):
     #     if word not in dict:
@@ -141,7 +141,7 @@ for line in file:
     #     else:
     #         dict[word] += 1
 
-    print(tokenize(line))
+    #print(tokenize(line))
     # count += 1
     # if count == 10:
     #     break
@@ -152,5 +152,6 @@ for line in file:
 # for line in sorted(dict.items(), key=operator.itemgetter(1)):
 #     print(line)
 
-file.close()
+#file.close()
 
+print(tokenize("môn học xử lý ngôn ngữ tự nhiên"))
