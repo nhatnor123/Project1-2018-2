@@ -3,9 +3,6 @@ import TokenizeText.tokenizeText as tk
 import gensim
 import operator
 
-
-
-
 file = open('/home/nhatnor123/Desktop/test.txt', 'r')
 
 dict = {}
