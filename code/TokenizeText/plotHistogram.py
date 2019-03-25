@@ -1,15 +1,18 @@
-import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
-class PlotHistogram():
-    #reload(sys)
-    #sys.setdefaultencoding('utf8')
-    histogram = {}
-    f = open('/home/nhatnor123/Desktop/3.txt')
-    for x in range(20):
-        (word, count) = next(f).split(' : ')
-        histogram[word] = int(count)
-    f.close()
-    df = pd.DataFrame.from_dict(histogram, orient='index')
-    df.plot(kind='bar')
+def PlotHistogram(dict):
+    f = open(dict, 'r')
+    label = []
+    countWord = []
+    for x in range(40):
+        (word, count) = next(f).split(" : ")
+        label.append(word)
+        countWord.append(int(count))
+
+    index = np.arange(len(label))
+
+    plt.bar(index, countWord)
+    plt.ylabel("Cumulative Counts")
+    plt.xticks(index, label, rotation= 90, fontsize=8)
     plt.show()

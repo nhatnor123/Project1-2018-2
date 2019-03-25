@@ -1,10 +1,10 @@
 import TokenizeText.tokenizeText as tk
-
+import TokenizeText.plotHistogram as plotHis
 import gensim
 import operator
 
-file = open('/home/nhatnor123/Desktop/test.txt', 'r')
-
+file = open('/home/nhatnor123/Desktop/test1.txt', 'r')
+fileResult = open('/home/nhatnor123/Desktop/result1.txt' , 'a')
 dict = {}
 
 for line in file:
@@ -16,13 +16,13 @@ for line in file:
         else:
             dict[word] += 1
 
-#for key in dict:
-    #print(key+" : "+ str(dict[key]))
-
-for line in sorted(dict.items(), key= operator.itemgetter(1)) :
-    print(line)
-
-#test : test 6613 line : 12p
-
+for x, y in sorted(dict.items(), key= operator.itemgetter(1), reverse=True) :
+    print(x, end=" : ")
+    print(y)
+    fileResult.write(x+" : "+ str(y)+"\n")
 
 file.close()
+fileResult.close()
+
+dictory = '/home/nhatnor123/Desktop/result1.txt'
+plotHis.PlotHistogram(dictory)

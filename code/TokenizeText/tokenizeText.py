@@ -62,7 +62,6 @@ def ListWord(text):
 # tokenize text from a ListWord
 result = ""
 
-
 def TokenizeText(listWordExample, start, end):
     global result
     for i in range(end, start - 1, -1):
