@@ -62,6 +62,7 @@ def ListWord(text):
 # tokenize text from a ListWord
 result = ""
 
+
 def TokenizeText(listWordExample, start, end):
     global result
     for i in range(end, start - 1, -1):
@@ -119,5 +120,66 @@ def tokenize(data):
                 result = result + list[listDiemNgatCau[i]] + " "
                 TokenizeText(list, listDiemNgatCau[i] + 1, listDiemNgatCau[i + 1] - 1)
         TokenizeText(list, listDiemNgatCau[len(listDiemNgatCau) - 1] + 1, len(list) - 1)
+
+    return result
+
+
+def getResultBI_Tokenize(listWordExample, start, end):
+    global result
+    for i in range(end, start - 1, -1):
+        if i == start:
+            # print(listWordExample[i],end= " ")
+            result = result + "B" + " "
+            getResultBI_Tokenize(listWordExample, start + 1, end)
+            return
+        else:
+            tempString = ""
+            tempBI = ""
+            for j in range(start, i + 1, 1):
+                if j != i:
+                    tempString += listWordExample[j] + "_"
+                    if j == start:
+                        tempBI += "B "
+                    else:
+                        tempBI += "I "
+            else:
+                tempString += listWordExample[j]
+                tempBI += "I"
+
+            # print(tempString)
+            if tempString.lower() in dictionary:
+                # print(tempString, end= " ")
+                result = result + tempBI + " "
+                getResultBI_Tokenize(listWordExample, i + 1, end)
+                return
+
+    return None
+
+
+def getResultBI_tokenize(data):
+    global result
+    list = ListWord(data)
+    result = ""
+
+    symbolEndSentence = ["`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "{", "}", "[",
+                         "]", "|", "\\", ":", ";", "'", '"', "<", ",", ".", "<", ">", "?", "/"]
+    listDiemNgatCau = []
+
+    for i in range(len(list)):
+        if list[i] in symbolEndSentence:
+            listDiemNgatCau.append(i)
+
+    if len(listDiemNgatCau) == 0:
+        getResultBI_Tokenize(list, 0, len(list) - 1)
+    else:
+        getResultBI_Tokenize(list, 0, listDiemNgatCau[0] - 1)
+
+        for i in range(0, len(listDiemNgatCau), 1):
+            if i == len(listDiemNgatCau) - 1:
+                result = result + "B "
+            else:
+                result = result + "B "
+                getResultBI_Tokenize(list, listDiemNgatCau[i] + 1, listDiemNgatCau[i + 1] - 1)
+        getResultBI_Tokenize(list, listDiemNgatCau[len(listDiemNgatCau) - 1] + 1, len(list) - 1)
 
     return result

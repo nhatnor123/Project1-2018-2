@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2782552-a03c-486a-a739-205c51a0e677" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TokenizeText/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TokenizeText/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TokenizeText/plotHistogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/plotHistogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TokenizeText/testTokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/testTokenize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TokenizeText/tokenizeText.py" beforeDir="false" afterPath="$PROJECT_DIR$/TokenizeText/tokenizeText.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TokenizeText/untitled.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,49 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TokenizeText/testTokenize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="430">
+              <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TokenizeText/Test.py">
+        <entry file="file://$PROJECT_DIR$/TokenizeText/tokenizeText.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="3766">
+              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TokenizeText/plotHistogram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#1#32#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,12 +72,13 @@
         <option value="$PROJECT_DIR$/tk/TokenizeText.py" />
         <option value="$PROJECT_DIR$/TokenizeText/TokenizeText.py" />
         <option value="$PROJECT_DIR$/TokenizeText/ex_regex.py" />
-        <option value="$PROJECT_DIR$/TokenizeText/testTokenize.py" />
         <option value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress4.py" />
         <option value="$PROJECT_DIR$/TokenizeText/Test.py" />
-        <option value="$PROJECT_DIR$/TokenizeText/tokenizeText.py" />
         <option value="$PROJECT_DIR$/TokenizeText/plotHistogram.py" />
         <option value="$PROJECT_DIR$/TokenizeText/Main.py" />
+        <option value="$PROJECT_DIR$/TokenizeText/testResultWithExample.py" />
+        <option value="$PROJECT_DIR$/TokenizeText/tokenizeText.py" />
+        <option value="$PROJECT_DIR$/TokenizeText/testTokenize.py" />
       </list>
     </option>
   </component>
@@ -152,7 +121,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -169,11 +138,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.testTokenize">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TokenizeText" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -193,6 +165,9 @@
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TokenizeText" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -200,28 +175,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TokenizeText/Test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="VNExpress4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clawlData/clawlData/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,6 +209,9 @@
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TokenizeText" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -271,13 +227,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testTokenize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="testResultWithExample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TokenizeText" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TokenizeText/testResultWithExample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testTokenize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TokenizeText" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -295,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testTokenize" />
+        <item itemvalue="Python.testResultWithExample" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.plotHistogram" />
         <item itemvalue="Python.Test" />
-        <item itemvalue="Python.testTokenize" />
-        <item itemvalue="Python.VNExpress4" />
       </list>
     </recent_temporary>
   </component>
@@ -337,12 +312,15 @@
       <workItem from="1553305791865" duration="168000" />
       <workItem from="1553306650109" duration="3611000" />
       <workItem from="1553491821909" duration="21123000" />
-      <workItem from="1553527808319" duration="9142000" />
+      <workItem from="1553527808319" duration="9354000" />
+      <workItem from="1553571902979" duration="1125000" />
+      <workItem from="1554437884939" duration="2552000" />
+      <workItem from="1554516160221" duration="7682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133114000" />
+    <option name="totallyTimeSpent" value="144685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,9 +333,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895397" visible="true" weight="0.17412935" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895397" visible="true" weight="0.18076286" />
       <window_info id="Structure" order="1" sideWeight="0.501046" side_tool="true" weight="0.17302378" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -371,7 +348,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.35564855" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.31799164" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.2615063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -478,9 +455,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TokenizeText/untitled.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TokenizeText/untitled.txt" />
     <entry file="file://$PROJECT_DIR$/clawlData/clawlData/spiders/VNExpress2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -530,19 +505,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TokenizeText/testTokenize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TokenizeText/testResultWithExample.py" />
     <entry file="file://$PROJECT_DIR$/TokenizeText/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="184">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -550,33 +516,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TokenizeText/tokenizeText.py">
+    <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="970">
-          <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
+        <state relative-caret-position="328">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TokenizeText/plotHistogram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="192">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#1#32#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TokenizeText/Main.py">
+    <entry file="file://$PROJECT_DIR$/TokenizeText/tokenizeText.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="3766">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TokenizeText/testTokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
         </state>
       </provider>
     </entry>

@@ -1,40 +1,66 @@
 import TokenizeText.tokenizeText as tk
-import sys
 
-print(tk.tokenize("Những ngày tiếp theo, gió mùa đông bắc tràn xuống, nhưng lệch đông. Đông Bắc Bộ, Bắc Trung Bộ sẽ đón ngày quốc tế phụ nữ 8/3 trong tiết trời mưa lạnh, nhiệt độ Hà Nội 19-20; Lạng Sơn 14-16. Tây Bắc Bộ, Trung Trung Bộ trở vào đến Nam Trung Bộ trời nắng 29-32 độ C."))
+# data = ""
+#
+# file  = open('/home/nhatnor123/Desktop/test-BI.txt', 'r')
+# for line in file:
+#     print(line.split("\n")[0].split("\t"))
+#     data += line.split("\n")[0].split("\t")[0] + " "
+#
+# print(data)
+# # print((data.split(" ")))
+# # print(len(data.split(" ")))
+# result = (tk.tokenize(data))
+#
+# fileResult = open('/home/nhatnor123/Desktop/resultMyTk-BI.txt', 'a')
+#
+# fileResult.write(result)
+# fileResult.close()
+# file.close()
 
-print(tk.tokenize("học sinh học sinh vật học"))
-print(tk.tokenize('''X là dữ liệu features, chúng ta chuẩn bị ở dạng dictionary. Mỗi âm (syllable) được tính và tạo ra một dữ liệu đặc trưng dạng json. Ví dụ: với câu “Hello World” sẽ có 2 syllables là “Hello” và “World”. Syllable là “Hello” sẽ tạo ra 1 dict là {‘bias’: 1.0, ‘lower’: ‘hello’}. Một số các feature chúng ta có thể tính là: ‘bias’, ‘lower’, ‘isupper’, ‘istitle’, ‘isdigit’. Lưu ý: feature của một từ còn được tính cho các từ phía trước phía sau. Ví dụ: ‘+1:lower’: ‘world’ là 1 feature của “Hello”. Tương ứng với mỗi syllable (ví dụ “Hello”) là một nhãn, chẳng hạn ‘B’ hay ‘I’ (bạn có thể thay là ‘0’ hoặc ‘1’)'''))
-print(tk.tokenize("""nhatnor123@gmail.com.vn https://forum.machinelearningcoban.com/t/vnlp-core-1-bai-toan-tach-tu-tieng-viet-tokenization-word-segmentation/2002"""))
+# data = """Chiều nay bạn mình thi ở D3 101 bị mất chiếc ví đen bên trong có CMT Nguyễn Trọng Cường và 1 số thẻ nữa
+# Mong tìm lại được giấy, tờ còn tiền trong ví đối với bạn mình   ko quan trọng lắm """
+#
+# print(len(tk.getResultBI_tokenize(data).split()))
+# print(len(tk.tokenize(data  ).split(" ")))
 
-specials = ["==>", "->", "\.\.\.", ">>"]
-digit = "\d+([\.,_]\d+)+"
-email = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
-web = "^(http[s]?://)?(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+$"
-datetime = [
-    "\d{1,2}\/\d{1,2}(\/\d+)?",
-    "\d{1,2}-\d{1,2}(-\d+)?",
-]
-word = "\w+"
-non_word = "[^\w\s]"
-abbreviations = [
-    "[A-ZĐ]+\.",
-    "Tp\.",
-    "Mr\.", "Mrs\.", "Ms\.",
-    "Dr\.", "ThS\."
-]
+countLine = 0
 
-patterns = []
-patterns.extend(abbreviations)
-patterns.extend(specials)
-patterns.extend([web, email])
-patterns.extend(datetime)
-patterns.extend([digit, non_word, word])
+resultTestTotal = 0
+resultTrue = 0
 
-patterns = "(" + "|".join(patterns) + ")"
-if sys.version_info < (3, 0):
-    patterns = patterns.decode('utf-8')
+resultForEachLine = []
+data = ""
+file = open('/home/nhatnor123/Desktop/test-BI.txt', 'r')
+count = 0;
+for line in file:
+    countLine += 1
+    print(countLine)
 
-print(patterns)
+    if line != "\n":
+        content = line.split('\n')
+        resultForEachLine.append(content[0].split("\t")[1])
+        data += (content[0].split("\t")[0] + " ")
+    else:
+        print("")
+        print(data)
+        print(resultForEachLine)
+        result = tk.getResultBI_tokenize(data).split(" ")
+        result.pop()
+        print(result)
 
-print(tk.tokenize("môn học xử lý ngôn ngữ tự nhiên, con ngựa đá đá con ngựa đá"))
+        resultTestTotal += len(result)
+        k = min(len(result), len(resultForEachLine))
+        for i in range(0, k):
+            if resultForEachLine[i] == result[i]:
+                resultTrue += 1
+
+        print(str(resultTrue) + " / " + str(resultTestTotal))
+
+        data = ""
+        resultForEachLine.clear()
+        # count += 1
+        # if count == 3:
+        #     break
+
+# kết quả khi test với Test_BI là :       209383/222004 = 94.315%
